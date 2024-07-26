@@ -1,0 +1,33 @@
+<%- layout("/layouts/boilerplate") %>
+
+<div class="row">
+    <div class="col-8 offset-2">
+
+  
+<div class="card listing-card">
+  <h1><b><%= listing.title %></b></h1>
+    <img src="<%= listing.image.url %>" class="card-img-top show-img url" alt="listing-image">
+    <div class="card-body">
+    <p>Owned by:<i><%= listing.owner.username %></i></p>  
+      
+   <p> <%= listing.description %></p>
+   <p>&#8377;<%= listing.price %> </p>
+   <p><%= listing.country %> </p>
+<p><%= listing.location %></p>
+    </div>
+  </div> 
+
+   <% if(currUser && currUser._id.equals(listing.owner._id)){ %>
+   <div class="but"> 
+<a href="/listings/<%= listing._id %>/edit"  class="btn btn-dark col-1 ed offset-9" >Edit </a>
+<br/><br/>
+<form method="post" action="/listings/<%= listing._id %>?_method=delete" >
+    <button class="btn btn-dark edit ">Delete</button></form>
+   </div> 
+<% } %>
+
+
+
+</div>
+</div>
+</div>

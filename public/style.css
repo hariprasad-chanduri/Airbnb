@@ -1,0 +1,103 @@
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+footer{
+    position: sticky;
+}
+
+.navbar{
+    height: 4rem;
+    background-color: white;
+}
+
+.fa-compass{
+  font-size: 2rem;
+  color: #fe424d;
+}
+
+.nav-link{
+    color: #222222 !important; 
+}
+.f-info-link a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-link:hover{
+    text-decoration: underline;
+}
+.f-info-link{
+    width: 100%;
+}
+.f-info-social{
+    font-size: 2rem;
+    width:100%
+}
+
+.f-info{
+    text-align: center;
+    display: flex;
+    height: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ebebeb;
+    align-content: space-evenly;
+}
+.card{
+    border:none !important;
+    margin-bottom: 2rem;
+    margin-right: 1rem !important;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% ;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.but{
+    display: flex;
+    flex-direction: row;
+}
+.listing-link{
+    text-decoration: none;
+}
+img:hover{
+    font-size: medium;
+}
+.show-img{
+    height: 40vh;
+}
+.url{
+    border-radius: 1rem !important;
+     width: 100% ;
+    height: 40vh;
+    border: 2px solid black;
+    object-fit:contain;
+}
+.btn{
+    display: flex;
+
+}
+.edit{
+    margin-left: 1rem;
+}
+.ed{
+    height: 2.4rem;
+}
+.btn a{
+    padding-right: 1rem;
+    text-decoration: none;
+}
+.ord img{
+    height: 15rem;
+    width: 20rem;
+}
